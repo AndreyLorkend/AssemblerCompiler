@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,17 +140,60 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AuxiliaryFileFormatRecord.cpp" />
+    <ClCompile Include="AuxiliarySectionFormatRecord.cpp" />
+    <ClCompile Include="AuxiliarySymbolRecord.cpp" />
     <ClCompile Include="Block.cpp" />
     <ClCompile Include="Compiler.cpp" />
+    <ClCompile Include="CompilerException.cpp" />
+    <ClCompile Include="DataOperand.cpp" />
+    <ClCompile Include="Exception.cpp" />
     <ClCompile Include="HeaderSection.cpp" />
+    <ClCompile Include="Instruction.cpp" />
+    <ClCompile Include="InstructionsTable.cpp" />
+    <ClCompile Include="LabelTable.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MemoryElementTable.cpp" />
+    <ClCompile Include="MemoryOperand.cpp" />
+    <ClCompile Include="NoOperandInstruction.cpp" />
+    <ClCompile Include="Operand.cpp" />
+    <ClCompile Include="RegisterOperand.cpp" />
+    <ClCompile Include="RegistersTable.cpp" />
     <ClCompile Include="Section.cpp" />
+    <ClCompile Include="SingleOperandInstruction.cpp" />
+    <ClCompile Include="SymbolTableSection.cpp" />
+    <ClCompile Include="TwoOperandInstruction.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AuxiliaryFileFormatRecord.h" />
+    <ClInclude Include="AuxiliarySectionFormatRecord.h" />
+    <ClInclude Include="AuxiliarySymbolRecord.h" />
     <ClInclude Include="Block.h" />
+    <ClInclude Include="CommandTypeTable.h" />
     <ClInclude Include="Compiler.h" />
+    <ClInclude Include="CompilerException.h" />
+    <ClInclude Include="DataOperand.h" />
+    <ClInclude Include="Exception.h" />
     <ClInclude Include="HeaderSection.h" />
+    <ClInclude Include="Instruction.h" />
+    <ClInclude Include="InstructionCode.h" />
+    <ClInclude Include="InstructionsTable.h" />
+    <ClInclude Include="LabelTable.h" />
+    <ClInclude Include="MemoryElementTable.h" />
+    <ClInclude Include="MemoryOperand.h" />
+    <ClInclude Include="NoOperandInstruction.h" />
+    <ClInclude Include="Operand.h" />
+    <ClInclude Include="RegisterOperand.h" />
+    <ClInclude Include="RegistersTable.h" />
     <ClInclude Include="Section.h" />
+    <ClInclude Include="SectionTypeTable.h" />
+    <ClInclude Include="SingleOperandInstruction.h" />
+    <ClInclude Include="SymbolTableSection.h" />
+    <ClInclude Include="TwoOperandInstruction.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="example.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

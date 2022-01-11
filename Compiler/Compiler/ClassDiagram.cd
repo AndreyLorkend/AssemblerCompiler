@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AuxiliaryFileFormatRecord">
+    <Position X="7.75" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAEAABAAAAAA=</HashCode>
+      <FileName>AuxiliaryFileFormatRecord.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuxiliarySectionFormatRecord">
+    <Position X="10.75" Y="4.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQAAAAAAAAAAgAAAAAAAAIAAAAAAgQABAEIAAA=</HashCode>
+      <FileName>AuxiliarySectionFormatRecord.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AuxiliarySymbolRecord">
+    <Position X="9.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>AuxiliarySymbolRecord.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Block">
+    <Position X="6.25" Y="9" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAIAAAAgAAAAAAABQAAAAABAAAAAABAAAAAE=</HashCode>
+      <FileName>Block.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Compiler">
+    <Position X="14.5" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>gAIBIggcAIEIgAAiQAACAgBQguAA4IwARAgCgAwAAJQ=</HashCode>
+      <FileName>Compiler.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataOperand">
+    <Position X="14.5" Y="20.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>DataOperand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeaderSection">
+    <Position X="6.25" Y="12.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAUAACAAAQAACSAAAAJQAgAAACAAAAIAAQBAAAQEA=</HashCode>
+      <FileName>HeaderSection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Instruction">
+    <Position X="17.75" Y="8.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAQAMAAAAIQAQACAAAAAAAAEAQIAQIAIAAAAIEEAAA=</HashCode>
+      <FileName>Instruction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InstructionsTable">
+    <Position X="26" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAgAAAAQAAAAAAAAEAAAAAAAAEAAAACAABAAAE=</HashCode>
+      <FileName>InstructionsTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabelTable">
+    <Position X="28.5" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAFhAAAAAABAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LabelTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MemoryElementTable">
+    <Position X="17.5" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEgAAAIAABAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>MemoryElementTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MemoryOperand">
+    <Position X="17.25" Y="20.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAgAAEAAAAAAAAAAAAAgABAAAAAAAIAA=</HashCode>
+      <FileName>MemoryOperand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NoOperandInstruction">
+    <Position X="14.75" Y="14.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NoOperandInstruction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Operand">
+    <Position X="17.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Operand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RegisterOperand">
+    <Position X="19.75" Y="20.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAACAAAAAAAAAAAAAQAAAAAAAAIAA=</HashCode>
+      <FileName>RegisterOperand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RegistersTable">
+    <Position X="17.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAIAABAACACAgAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>RegistersTable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Section">
+    <Position X="2.75" Y="12.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAACAAIQAAEACQAAAAAIAAAAAQAABBAAAUhoEMMFA=</HashCode>
+      <FileName>Section.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingleOperandInstruction">
+    <Position X="17.75" Y="14.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SingleOperandInstruction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SymbolTableSection">
+    <Position X="10" Y="12.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAACAAAAgAAAIAAIAQIAACCCAAAAAEBAAAIAA=</HashCode>
+      <FileName>SymbolTableSection.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TwoOperandInstruction">
+    <Position X="20.75" Y="14.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>TwoOperandInstruction.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exception">
+    <Position X="1.75" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQABIAAAAAAAAAAAAAAQAAAAABAAABAAAAAAAIAAAA=</HashCode>
+      <FileName>Exception.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompilerException">
+    <Position X="1.75" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>CompilerException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="InstructionCode">
+    <Position X="20.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InstructionCode.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="InstructionParams">
+    <Position X="22.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAABAAAAAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InstructionsTable.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="labelParams">
+    <Position X="24.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LabelTable.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MemoryElementParams">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MemoryElementTable.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RegisterParams">
+    <Position X="22.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RegistersTable.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="CommandType">
+    <Position X="27.75" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAgAICAABAAAAAAAEAAAAAAAAAAAIBAAAAAA=</HashCode>
+      <FileName>CommandTypeTable.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SourceReciver">
+    <Position X="30.75" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAQAAAABAAACAAAAAAAAAAAAQ=</HashCode>
+      <FileName>InstructionsTable.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TableType">
+    <Position X="24.5" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>InstructionsTable.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SectionType">
+    <Position X="24.5" Y="8.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAgAAAQAAAEAAAAABAAAAAAAA=</HashCode>
+      <FileName>SectionTypeTable.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
