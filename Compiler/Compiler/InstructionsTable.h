@@ -1,7 +1,17 @@
 #pragma once
 #include <string>
 #include <map>
-#include "InstructionCode.h"
+#include "InstructionAdd.h"
+#include "InsctructionPush.h"
+#include "InstructionMov.h"
+#include "InstructionLodsw.h"
+#include "InstructionJcc.h"
+#include "InstructionJmp.h"
+#include "InstructionRcl.h"
+#include "InstructionRet.h"
+#include "InstructionSbb.h"
+#include "InstructionXor.h"
+#include "InstructionCmp.h"
 #define DATA_SOURCE 1
 #define REG_SOURCE 2
 #define MEM_SOURCE 3
@@ -10,39 +20,27 @@
 
 using namespace std;
 
-enum SourceReciver {
-	NO_SOURCE_RECIVER = 0,
-	REG_DATA = 1,
-	REG_REG = 2,
-	REG_MEM = 3,
-	MEM_REG = 4,
-	MEM_DATA = 5
-};
-
-
 enum TableType {
 	NO_OPERAND_TABLE = 0,
 	ONE_OPERAND_TABLE,
 	TWO_OPERAND_TABLE
 };
 
-struct InstructionParams {
-	BYTE firstByteCode;
-	BYTE secondByteCode;
-	SourceReciver sourceReciverType;
-};
-
 class InstructionsTable
 {
 private:
-	multimap<string, InstructionParams> noOperandInstructions;
-	multimap<string, InstructionParams> oneOperandInstructions;
-	multimap<string, InstructionParams> twoOperandInstructions;
+	multimap<string, NoOperandInstruction*> noOperandInstructions;
+	multimap<string, SingleOperandInstruction*> oneOperandInstructions;
+	multimap<string, TwoOperandInstruction*> twoOperandInstructions;
 	void initTables();
-	void addInstruction(string name, BYTE fbcode, BYTE sbcode, SourceReciver sourceReciverType, multimap<string, InstructionParams>& table);
+	void addNoOperandInstruction(string name, NoOperandInstruction* instruction);
+	void addSingleOperandInstruction(string name, SingleOperandInstruction* instruction);
+	void addTwoOperandInstruction(string name, TwoOperandInstruction* instruction);
 public:
 	InstructionsTable();
 	bool findElementByKey(string name, TableType type);
-	InstructionCode getInstrucrionCode(string name, TableType type, SourceReciver sourceReciverType);
+	NoOperandInstruction* getNoOperandInstructionByKey(string name, SourceReciver sr);
+	SingleOperandInstruction* getSingleOperandInstructionByKey(string name, SourceReciver sr);
+	TwoOperandInstruction* getTwoOperandInstructionByKey(string name, SourceReciver sr);
 };
 

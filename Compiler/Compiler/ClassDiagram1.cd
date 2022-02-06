@@ -10,105 +10,105 @@
   <Class Name="InsctructionPush" Collapsed="true">
     <Position X="10.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAFABAgAI=</HashCode>
       <FileName>InsctructionPush.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Instruction" Collapsed="true">
     <Position X="12.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAAAIAAAQACAAAAgAAAEAAIAQAAIAAAAAEAAAA=</HashCode>
+      <HashCode>QAAAAEAAAIAAAQACAAAAgAAAEABIAQQAIAAABCEAAAI=</HashCode>
       <FileName>Instruction.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionAdd" Collapsed="true">
-    <Position X="19.25" Y="3.25" Width="1.5" />
+    <Position X="23.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAACAIBAAAAAABABAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAIAAAAAAAFABAAAI=</HashCode>
       <FileName>InstructionAdd.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionCmp" Collapsed="true">
-    <Position X="21.5" Y="3.25" Width="1.5" />
+    <Position X="12.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAACAAAAAAAAABABBAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAFABBAAI=</HashCode>
       <FileName>InstructionCmp.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionJcc" Collapsed="true">
     <Position X="5.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAACAAAAAAAAAAgAAAAAAAAAAAAABAAAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAgABAAAAAAAAAFABAAAI=</HashCode>
       <FileName>InstructionJcc.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionJmp" Collapsed="true">
     <Position X="8" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAABBAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAFABBAAI=</HashCode>
       <FileName>InstructionJmp.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionLodsw" Collapsed="true">
     <Position X="1.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAABAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAFABAAAI=</HashCode>
       <FileName>InstructionLodsw.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionMov" Collapsed="true">
-    <Position X="14.75" Y="3.25" Width="1.5" />
+    <Position X="19.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAFAAAAAAAAAAAAAAAAAAAAACAABAAAAAABABAAAA=</HashCode>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAFABAAAI=</HashCode>
       <FileName>InstructionMov.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionRcl" Collapsed="true">
-    <Position X="17" Y="3.25" Width="1.5" />
+    <Position X="21.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAAAAAAAAAAAAAQAAAAACAAAAAAAAABABAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAABAAAAAAAAAFABAAAI=</HashCode>
       <FileName>InstructionRcl.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionRet" Collapsed="true">
     <Position X="3.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAABABAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAAAAFABAAAI=</HashCode>
       <FileName>InstructionRet.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionSbb" Collapsed="true">
-    <Position X="23.75" Y="3.25" Width="1.5" />
+    <Position X="14.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAACAAAAAAAAABABAAAg=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAFABAAAo=</HashCode>
       <FileName>InstructionSbb.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionXor" Collapsed="true">
-    <Position X="12.5" Y="3.25" Width="1.5" />
+    <Position X="17" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAACAABAAAAAABABAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAABAAAAAAAAAFABAAAI=</HashCode>
       <FileName>InstructionXor.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NoOperandInstruction" Collapsed="true">
     <Position X="2.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>EAAAAABAAAAAAAAAAAAAAAAAAABAAAAAAAAAFAAAAAI=</HashCode>
       <FileName>NoOperandInstruction.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SingleOperandInstruction" Collapsed="true">
     <Position X="8" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAIAACAAAACAAAQABAAAAAABAAAAAAAAAFAAAAhI=</HashCode>
       <FileName>SingleOperandInstruction.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TwoOperandInstruction" Collapsed="true">
     <Position X="18.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AgAABAAKACACADAAAAAAAAAAEADBADBAFQFEFAAAAAI=</HashCode>
       <FileName>TwoOperandInstruction.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -164,35 +164,35 @@
   <Class Name="DataOperand" Collapsed="true">
     <Position X="2.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <HashCode>CKIAAAAACAAQAAAAAAAAABAAgAAAAAAQAAAAAAAAAAE=</HashCode>
       <FileName>DataOperand.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MemoryOperand" Collapsed="true">
     <Position X="5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAIAAAAgAAEAAAAAAAAAAAAAgABAAAAAAAIAA=</HashCode>
+      <HashCode>AIAAAAAAKAAEAAAAEAAAAAAAAAAAAAgABAAAAAAAIAA=</HashCode>
       <FileName>MemoryOperand.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Operand" Collapsed="true">
     <Position X="2.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
       <FileName>Operand.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RegisterOperand" Collapsed="true">
     <Position X="0.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAAAAAAAACAAAAAAAAAAAAAQAAAAAAAAIAA=</HashCode>
+      <HashCode>EIAAAAAAAAAEAAAAACAAAAAAAAAAAAAQAAAAAAAAIAA=</HashCode>
       <FileName>RegisterOperand.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InstructionsTable" Collapsed="true">
     <Position X="28" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAgAAAAQAAAAAAAAEAAAAAAAAAAAAACAABAAAE=</HashCode>
+      <HashCode>AAAAAAAgAAAAQAACAAAAAkAAAAAAAAAAAAACAAFAEAU=</HashCode>
       <FileName>InstructionsTable.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -270,7 +270,7 @@
     <Position X="29.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAYAAAAAAAAAAAAAAAAAQAAAABAAACAAAAAAAAAAAAQ=</HashCode>
-      <FileName>InstructionsTable.h</FileName>
+      <FileName>Instruction.h</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="TableType" Collapsed="true">

@@ -149,8 +149,19 @@
     <ClCompile Include="DataOperand.cpp" />
     <ClCompile Include="Exception.cpp" />
     <ClCompile Include="HeaderSection.cpp" />
+    <ClCompile Include="InsctructionPush.cpp" />
     <ClCompile Include="Instruction.cpp" />
+    <ClCompile Include="InstructionAdd.cpp" />
+    <ClCompile Include="InstructionCmp.cpp" />
+    <ClCompile Include="InstructionJcc.cpp" />
+    <ClCompile Include="InstructionJmp.cpp" />
+    <ClCompile Include="InstructionLodsw.cpp" />
+    <ClCompile Include="InstructionMov.cpp" />
+    <ClCompile Include="InstructionRcl.cpp" />
+    <ClCompile Include="InstructionRet.cpp" />
+    <ClCompile Include="InstructionSbb.cpp" />
     <ClCompile Include="InstructionsTable.cpp" />
+    <ClCompile Include="InstructionXor.cpp" />
     <ClCompile Include="LabelTable.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MemoryElementTable.cpp" />
@@ -175,9 +186,19 @@
     <ClInclude Include="DataOperand.h" />
     <ClInclude Include="Exception.h" />
     <ClInclude Include="HeaderSection.h" />
+    <ClInclude Include="InsctructionPush.h" />
     <ClInclude Include="Instruction.h" />
-    <ClInclude Include="InstructionCode.h" />
+    <ClInclude Include="InstructionAdd.h" />
+    <ClInclude Include="InstructionCmp.h" />
+    <ClInclude Include="InstructionJcc.h" />
+    <ClInclude Include="InstructionJmp.h" />
+    <ClInclude Include="InstructionLodsw.h" />
+    <ClInclude Include="InstructionMov.h" />
+    <ClInclude Include="InstructionRcl.h" />
+    <ClInclude Include="InstructionRet.h" />
+    <ClInclude Include="InstructionSbb.h" />
     <ClInclude Include="InstructionsTable.h" />
+    <ClInclude Include="InstructionXor.h" />
     <ClInclude Include="LabelTable.h" />
     <ClInclude Include="MemoryElementTable.h" />
     <ClInclude Include="MemoryOperand.h" />
@@ -193,6 +214,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="example.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

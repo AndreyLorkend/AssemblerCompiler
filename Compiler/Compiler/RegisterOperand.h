@@ -9,5 +9,7 @@ private:
 	BYTE registerLength_;
 public:
 	RegisterOperand(string name, BYTE registerCode, BYTE registerLength);
+	BYTE getCode();
+	BYTE getLength();
 };
 

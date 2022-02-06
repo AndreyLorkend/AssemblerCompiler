@@ -6,3 +6,13 @@ RegisterOperand::RegisterOperand(string name, BYTE registerCode, BYTE registerLe
 	registerCode_ = registerCode;
 	registerLength_ = registerLength;
 }
+
+BYTE RegisterOperand::getCode()
+{
+	return registerCode_;
+}
+
+BYTE RegisterOperand::getLength()
+{
+	return registerLength_;
+}

@@ -52,25 +52,7 @@ void Section::writeRawData(ofstream* fout)
 {
     if (sizeOfRawData_ != 0) {
         for (auto el : rawData_) {
-            BYTE fByte = el->getInstructionCode().firstByte;
-            BYTE sByte = el->getInstructionCode().secondByte;
-            int data = el->getData();
-            BYTE prefix = 0x66;
-            if (el->getPrefixFlag()) {
-                fout->write(reinterpret_cast<const char*>(&prefix), sizeof(prefix));
-            }
-            fout->write(reinterpret_cast<const char*>(&fByte), sizeof(fByte));
-            if (el->getInstructionCode().secondByte != 0) {
-                fout->write(reinterpret_cast<const char*>(&sByte), sizeof(sByte));
-            }
-            if (el->getDataFlag()) {
-                if (el->getSourceReciver() == REG_MEM) {
-                    fout->write(reinterpret_cast<const char*>(&data), sizeof(BYTE));
-                }
-                if (el->getSourceReciver() == REG_DATA) {
-                    fout->write(reinterpret_cast<const char*>(&data), sizeof(int));
-                }
-            }
+            el->writeToFile(fout);
         }
     }
 }

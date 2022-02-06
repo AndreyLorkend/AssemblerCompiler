@@ -3,31 +3,37 @@
 void InstructionsTable::initTables()
 {
 	//No operand instructions
-	addInstruction("lodsw", 0x66, 0xAD, NO_SOURCE_RECIVER, noOperandInstructions);
-	addInstruction("ret", 0xC9, 0xC3, NO_SOURCE_RECIVER, noOperandInstructions);
+	addNoOperandInstruction("lodsw", new InstructionLodsw(0xAD, true, NO_SOURCE_RECIVER));
+	addNoOperandInstruction("ret", new InstructionRet(0xC9, 0xC3, false, NO_SOURCE_RECIVER));
 	//One operand instructions
-	addInstruction("jg", 0x7F, 0x00, NO_SOURCE_RECIVER, oneOperandInstructions);
-	addInstruction("jmp", 0xEB, 0x00, NO_SOURCE_RECIVER, oneOperandInstructions);
+	addSingleOperandInstruction("jg", new InstructionJcc(0x70, 0x0F, 0x00, NULL, false, NO_SOURCE_RECIVER));
+	addSingleOperandInstruction("jmp", new InstructionJmp(0xEB, 0x00, NULL, false, NO_SOURCE_RECIVER));
+	addSingleOperandInstruction("push", new InsctructionPush(0x50, NULL, false, NO_SOURCE_RECIVER));
 	//Two operand instructions
-	addInstruction("mov", 0xC6, 0xC0, REG_DATA, twoOperandInstructions);
-	addInstruction("mov", 0x8A, 0xC0, REG_REG, twoOperandInstructions);
-	addInstruction("mov", 0x8A, 0x00, REG_MEM, twoOperandInstructions);
-	addInstruction("xor", 0x32, 0xC0, REG_REG, twoOperandInstructions);
-	addInstruction("rcl", 0xC0, 0xD0, REG_DATA, twoOperandInstructions);
-	addInstruction("sbb", 0x82, 0xD8, REG_DATA, twoOperandInstructions);
-	addInstruction("add", 0x02, 0xC0, REG_REG, twoOperandInstructions);
-	addInstruction("add", 0x82, 0xC0, REG_DATA, twoOperandInstructions);
-	addInstruction("cmp", 0x3A, 0x00, REG_MEM, twoOperandInstructions);
-	
+	addTwoOperandInstruction("mov", new InstructionMov(0xC6, 0xC0, 0, NULL, NULL, false, true, REG_DATA));
+	addTwoOperandInstruction("mov", new InstructionMov(0x88, 0xC0, (BYTE)0, (BYTE)0, NULL, NULL, false, REG_REG));
+	addTwoOperandInstruction("mov", new InstructionMov(0x8A, 0x00, 0, NULL, 1, NULL, false, REG_MEM));
+	addTwoOperandInstruction("xor", new InstructionXor(0x30, 0xC0, 0, 0, NULL, NULL, false, REG_REG));
+	addTwoOperandInstruction("rcl", new InstructionRcl(0xC0, 0x10, 0, 3, NULL, NULL, false, true, REG_DATA));
+	addTwoOperandInstruction("sbb", new InstructionSbb(0x80, 0xD8, 0, 0, NULL, NULL, false, true, REG_DATA));
+	addTwoOperandInstruction("add", new InstructionAdd(0x00, 0xC0, 0, 0, NULL, NULL, false, REG_REG));
+	addTwoOperandInstruction("add", new InstructionAdd(0x80, 0xC0, 0, 0, NULL, NULL, false, true, REG_DATA));
+	addTwoOperandInstruction("cmp", new InstructionCmp(0x3A, 0x00, 0, 1, NULL, NULL, false, REG_MEM));
 }
 
-void InstructionsTable::addInstruction(string name, BYTE fbcode, BYTE sbcode, SourceReciver sourceReciverType, multimap<string, InstructionParams>& table)
+void InstructionsTable::addNoOperandInstruction(string name, NoOperandInstruction* instruction)
 {
-	InstructionParams params;
-	params.firstByteCode = fbcode;
-	params.secondByteCode = sbcode;
-	params.sourceReciverType = sourceReciverType;
-	table.insert(make_pair(name, params));
+	noOperandInstructions.insert(make_pair(name, instruction));
+}
+
+void InstructionsTable::addSingleOperandInstruction(string name, SingleOperandInstruction* instruction)
+{
+	oneOperandInstructions.insert(make_pair(name, instruction));
+}
+
+void InstructionsTable::addTwoOperandInstruction(string name, TwoOperandInstruction* instruction)
+{
+	twoOperandInstructions.insert(make_pair(name, instruction));
 }
 
 InstructionsTable::InstructionsTable()
@@ -66,32 +72,32 @@ bool InstructionsTable::findElementByKey(string name, TableType type)
 	}
 }
 
-InstructionCode InstructionsTable::getInstrucrionCode(string name, TableType type, SourceReciver sourceReciverType)
+NoOperandInstruction* InstructionsTable::getNoOperandInstructionByKey(string name, SourceReciver sr)
 {
-	switch (type)
-	{
-	case NO_OPERAND_TABLE:
-		for (auto el = noOperandInstructions.begin(); el != noOperandInstructions.end(); el++) {
-			if (el->first == name && el->second.sourceReciverType == sourceReciverType) {
-				return InstructionCode({ el->second.firstByteCode, el->second.secondByteCode });
-			}
+	for (auto el : noOperandInstructions) {
+		if (el.second->getSourceReciver() == sr && el.first == name) {
+			return el.second;
 		}
-		break;
-	case ONE_OPERAND_TABLE:
-		for (auto el = oneOperandInstructions.begin(); el != oneOperandInstructions.end(); el++) {
-			if (el->first == name && el->second.sourceReciverType == sourceReciverType) {
-				return InstructionCode({ el->second.firstByteCode, el->second.secondByteCode });
-			}
-		}
-		break;
-	case TWO_OPERAND_TABLE:
-		for (auto el = twoOperandInstructions.begin(); el != twoOperandInstructions.end(); el++) {
-			if (el->first == name && el->second.sourceReciverType == sourceReciverType) {
-				return InstructionCode({ el->second.firstByteCode, el->second.secondByteCode });
-			}
-		}
-		break;
-	default:
-		break;
 	}
+	return NULL;
+}
+
+SingleOperandInstruction* InstructionsTable::getSingleOperandInstructionByKey(string name, SourceReciver sr)
+{
+	for (auto el : oneOperandInstructions) {
+		if (el.second->getSourceReciver() == sr && el.first == name) {
+			return el.second;
+		}
+	}
+	return NULL;
+}
+
+TwoOperandInstruction* InstructionsTable::getTwoOperandInstructionByKey(string name, SourceReciver sr)
+{
+	for (auto el : twoOperandInstructions) {
+		if (el.second->getSourceReciver() == sr && el.first == name) {
+			return el.second;
+		}
+	}
+	return NULL;
 }

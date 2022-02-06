@@ -1,5 +1,18 @@
 #include "NoOperandInstruction.h"
 
-NoOperandInstruction::NoOperandInstruction(InstructionCode instructionCode, bool flag, SourceReciver sr) : Instruction(instructionCode, flag, false, 0, sr)
+NoOperandInstruction::NoOperandInstruction() : Instruction()
 {
+}
+
+NoOperandInstruction::NoOperandInstruction(bool flag, SourceReciver sr) : Instruction(flag, sr)
+{
+}
+
+NoOperandInstruction::~NoOperandInstruction()
+{
+}
+
+NoOperandInstruction* NoOperandInstruction::clone()
+{
+    return NULL;
 }

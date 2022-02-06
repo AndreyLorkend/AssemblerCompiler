@@ -25,9 +25,8 @@ c1: xor eax, eax
 	jmp      c1
 exit:       
 
-
-	mov eax, 228
-	;add eax, ebx
+	mov eax, edx
+	add eax, ebx
          ret
 example ENDP
 END

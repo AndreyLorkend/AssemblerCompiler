@@ -10,12 +10,12 @@ void MemoryElementTable::addElement(string key, BYTE offset, BYTE length)
 
 bool MemoryElementTable::findElementByKey(string key)
 {
-	map<string, MemoryElementParams>::iterator it = table.find(key);
-	if (it == table.end() && table[key].offset == NULL) {
-		return false;
-	} else {
-		return true;
+	for (auto el : table) {
+		if (el.first == key) {
+			return true;
+		}
 	}
+	return false;
 }
 
 BYTE MemoryElementTable::getOffsetByKey(string key)

@@ -9,5 +9,6 @@ class Operand
 private:
 public:
 	virtual ~Operand();
+	virtual BYTE getCode() = 0;
 };
 

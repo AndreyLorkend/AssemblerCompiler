@@ -13,153 +13,246 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="INSTRUCTIONS HEADER">
+      <UniqueIdentifier>{2e553d20-d808-409b-9ca9-1c9f83c0d131}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="INSTRUCTIONS DEFENITION">
+      <UniqueIdentifier>{6ab41d40-6195-48c5-bd82-8fb13d10a507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SECTIONS HEADER">
+      <UniqueIdentifier>{df7dd47d-e07d-467a-ab26-a796a5a31258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SECTIONS DEFENITION">
+      <UniqueIdentifier>{640f7f7f-e4e8-4318-a76d-27d57b836a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OPERANDS HEADER">
+      <UniqueIdentifier>{de3a065a-4982-4036-bba6-b53c68c3adf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OPERANDS DEFENITION">
+      <UniqueIdentifier>{63ad903a-f676-4411-85f9-1a52e1d994c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TABLES HEADER">
+      <UniqueIdentifier>{05a4f89f-6590-4fd7-b04e-9774598d6dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TABLES DEFENITION">
+      <UniqueIdentifier>{f1cba1df-b0f7-414c-9597-34c3873c948b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EXCEPTIONS HEADER">
+      <UniqueIdentifier>{a7cd1544-0157-4e47-a9d8-d8421f031c78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EXCEPTIONS DEFENITION">
+      <UniqueIdentifier>{83f4cadf-9e0c-4b91-88b2-5fd82f6aa5db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Block.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="Compiler.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="HeaderSection.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Section.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InsctructionPush.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
     <ClCompile Include="Instruction.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="SingleOperandInstruction.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionAdd.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="TwoOperandInstruction.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionJmp.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="NoOperandInstruction.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionJcc.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="Operand.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionCmp.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="MemoryOperand.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionMov.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="DataOperand.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionLodsw.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="RegisterOperand.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionRcl.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="SymbolTableSection.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionSbb.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="RegistersTable.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionRet.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
-    <ClCompile Include="InstructionsTable.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="MemoryElementTable.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="LabelTable.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="AuxiliarySymbolRecord.cpp">
-      <Filter>Исходные файлы</Filter>
+    <ClCompile Include="InstructionXor.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
     </ClCompile>
     <ClCompile Include="AuxiliaryFileFormatRecord.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>SECTIONS DEFENITION</Filter>
     </ClCompile>
     <ClCompile Include="AuxiliarySectionFormatRecord.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>SECTIONS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="AuxiliarySymbolRecord.cpp">
+      <Filter>SECTIONS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>SECTIONS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="Section.cpp">
+      <Filter>SECTIONS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="HeaderSection.cpp">
+      <Filter>SECTIONS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="SymbolTableSection.cpp">
+      <Filter>SECTIONS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoOperandInstruction.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="SingleOperandInstruction.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="NoOperandInstruction.cpp">
+      <Filter>INSTRUCTIONS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="Operand.cpp">
+      <Filter>OPERANDS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterOperand.cpp">
+      <Filter>OPERANDS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryOperand.cpp">
+      <Filter>OPERANDS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="DataOperand.cpp">
+      <Filter>OPERANDS DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="InstructionsTable.cpp">
+      <Filter>TABLES DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="LabelTable.cpp">
+      <Filter>TABLES DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistersTable.cpp">
+      <Filter>TABLES DEFENITION</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryElementTable.cpp">
+      <Filter>TABLES DEFENITION</Filter>
     </ClCompile>
     <ClCompile Include="Exception.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>EXCEPTIONS DEFENITION</Filter>
     </ClCompile>
     <ClCompile Include="CompilerException.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>EXCEPTIONS DEFENITION</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Block.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="Compiler.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="HeaderSection.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Section.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Instruction.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="SingleOperandInstruction.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="TwoOperandInstruction.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="NoOperandInstruction.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="CommandTypeTable.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="RegistersTable.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="SectionTypeTable.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Operand.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="InsctructionPush.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
-    <ClInclude Include="MemoryOperand.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="InstructionAdd.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
-    <ClInclude Include="DataOperand.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="Instruction.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
-    <ClInclude Include="RegisterOperand.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="InstructionCmp.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
-    <ClInclude Include="SymbolTableSection.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="InstructionJcc.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
-    <ClInclude Include="InstructionsTable.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="InstructionJmp.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
-    <ClInclude Include="MemoryElementTable.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="InstructionLodsw.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
-    <ClInclude Include="InstructionCode.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="InstructionMov.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
-    <ClInclude Include="LabelTable.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="InstructionRcl.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
-    <ClInclude Include="AuxiliarySymbolRecord.h">
-      <Filter>Файлы заголовков</Filter>
+    <ClInclude Include="InstructionRet.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructionSbb.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructionXor.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
     </ClInclude>
     <ClInclude Include="AuxiliaryFileFormatRecord.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>SECTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="AuxiliarySymbolRecord.h">
+      <Filter>SECTIONS HEADER</Filter>
     </ClInclude>
     <ClInclude Include="AuxiliarySectionFormatRecord.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>SECTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>SECTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="Section.h">
+      <Filter>SECTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolTableSection.h">
+      <Filter>SECTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="HeaderSection.h">
+      <Filter>SECTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="TwoOperandInstruction.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="SingleOperandInstruction.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="NoOperandInstruction.h">
+      <Filter>INSTRUCTIONS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="DataOperand.h">
+      <Filter>OPERANDS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterOperand.h">
+      <Filter>OPERANDS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="Operand.h">
+      <Filter>OPERANDS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryOperand.h">
+      <Filter>OPERANDS HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryElementTable.h">
+      <Filter>TABLES HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="InstructionsTable.h">
+      <Filter>TABLES HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="LabelTable.h">
+      <Filter>TABLES HEADER</Filter>
+    </ClInclude>
+    <ClInclude Include="RegistersTable.h">
+      <Filter>TABLES HEADER</Filter>
     </ClInclude>
     <ClInclude Include="Exception.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>EXCEPTIONS HEADER</Filter>
     </ClInclude>
     <ClInclude Include="CompilerException.h">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>EXCEPTIONS HEADER</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -167,5 +260,6 @@
       <Filter>Исходные файлы</Filter>
     </None>
     <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

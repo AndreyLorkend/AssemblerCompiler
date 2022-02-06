@@ -1,55 +1,73 @@
 #include "Instruction.h"
 
-Instruction::Instruction(InstructionCode instructionCode, bool flag, bool dataFlag, int data, SourceReciver sr)
+Instruction::Instruction()
 {
-    instructionCode_ = instructionCode;
-    prefix16bits_ = 0x66;
-    isPrefixUsed = flag;
-    data_ = data;
-    isData_ = dataFlag;
-    sourceReciver = sr;
+}
+
+Instruction::Instruction(bool flag, SourceReciver sr)
+{
+    prefix16bits_ = 0;
+    sourceReciver_ = sr;
+    isPrefixUsed_ = flag;
+    isDataFlag_ = false;
+    if (isPrefixUsed_) {
+        prefix16bits_ = 0x66;
+    }
+}
+
+Instruction::Instruction(bool flag, bool dataFlag, SourceReciver sr)
+{
+    prefix16bits_ = 0;
+    sourceReciver_ = sr;
+    isPrefixUsed_ = flag;
+    isDataFlag_ = dataFlag;
+    if (isPrefixUsed_) {
+        prefix16bits_ = 0x66;
+    }
 }
 
 void Instruction::setPrefixFlag(bool flag)
 {
-    isPrefixUsed = flag;
+    isPrefixUsed_ = flag;
+    if (flag) {
+        prefix16bits_ = 0x66;
+    }
+}
+
+void Instruction::setDataFlag(bool flag)
+{
+    isDataFlag_ = flag;
 }
 
 bool Instruction::getPrefixFlag()
 {
-    return isPrefixUsed;
+    return isPrefixUsed_;
 }
 
-void Instruction::setSecondByte(BYTE sbyte)
+bool Instruction::getDataFlag()
 {
-    instructionCode_.secondByte = sbyte;
-}
-
-InstructionCode Instruction::getInstructionCode()
-{
-    return instructionCode_;
+    return isDataFlag_;
 }
 
 Instruction::~Instruction()
 {
 }
 
-int Instruction::getData()
+void Instruction::writeToFile(ofstream* fout)
 {
-    return data_;
-}
-
-bool Instruction::getDataFlag()
-{
-    return isData_;
 }
 
 void Instruction::setSourceReciver(SourceReciver sr)
 {
-    sourceReciver = sr;
+    sourceReciver_ = sr;
 }
 
 SourceReciver Instruction::getSourceReciver()
 {
-    return sourceReciver;
+    return sourceReciver_;
+}
+
+BYTE Instruction::getPrefix()
+{
+    return prefix16bits_;
 }
